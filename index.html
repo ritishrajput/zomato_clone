@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Order Food Online & Discover Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Zomato Home">
+                <img src="img/logo.png" alt="Zomato">
+            </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="investor.html" class="nav-link">Investor Relations</a></li>
+            <li><a href="add-restaurant.html" class="nav-link">Add restaurant</a></li>
+            <li><a href="#get-app" class="nav-link" id="navGetApp">Get the App</a></li>
+            <li><a href="#offers" class="nav-link" id="navOffers">Offers <span class="nav-badge">NEW</span></a></li>
+            <li><a href="#login" class="nav-btn-login" id="navLogin">Login</a></li>
+            <li><a href="#signup" class="nav-btn-signup" id="navSignup">Sign up</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <img src="img/logo.png" alt="Zomato">
+            <p>Discover the best food & drinks in Kathua</p>
+            <input placeholder="Search for restaurant, cuisine or a dish" aria-label="Search food or restaurant">
+        </section>
+
+        <!-- Quick Service Category Cards -->
+        <section class="service-categories">
+            <div class="category-cards-grid">
+                <a href="#order-online" class="category-card" id="cardOrderOnline">
+                    <div class="category-card-img-wrap" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%); display: flex; align-items: center; justify-content: center; font-size: 56px;">
+                        🛵
+                        <span class="category-badge-chip">⚡ 25-30 Mins</span>
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Order Online</h3>
+                        <p>Stay home and order to your doorstep from top-rated restaurants</p>
+                    </div>
+                </a>
+
+                <a href="#dining-out" class="category-card" id="cardDiningOut">
+                    <div class="category-card-img-wrap" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); display: flex; align-items: center; justify-content: center; font-size: 56px;">
+                        🍽️
+                        <span class="category-badge-chip">🍷 Table Booking</span>
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Dining Out</h3>
+                        <p>Explore city's favorite dining venues, cafes, and rooftop spots</p>
+                    </div>
+                </a>
+
+                <a href="#nightlife" class="category-card" id="cardNightlife">
+                    <div class="category-card-img-wrap" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%); display: flex; align-items: center; justify-content: center; font-size: 56px;">
+                        🍸
+                        <span class="category-badge-chip">🎶 Live Events</span>
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Nightlife & Clubs</h3>
+                        <p>Explore the best nightlife, pubs, cocktail lounges, and music events</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Features Section -->
+        <section>
+            <h2>Why Choose Us for Food Delivery?</h2>
+            <p>We make it easy to discover and enjoy delicious food, wherever you are.</p>
+            <div class="main-features">
+                <div class="feature">
+                    <h3>Fast Delivery</h3>
+                    <p>Our reliable delivery partners ensure your food reaches you in no time, steaming hot.</p>
+                </div>
+                <div class="feature">
+                    <h3>Variety of Choices</h3>
+                    <p>From local street favorites to global cuisines, explore hundreds of curated menus.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy Payment</h3>
+                    <p>Pay seamlessly through UPI, cards, net banking, or cash on delivery with complete peace of mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Download Promo Section -->
+        <section class="app-promo-section">
+            <div class="app-promo-container">
+                <div class="app-promo-mockup">
+                    <div class="mockup-phone-frame">
+                        <div class="phone-notch"></div>
+                        <div style="font-size: 48px; margin-top: 10px;">📱</div>
+                        <h4 style="margin: 12px 0 6px; font-size: 17px; font-weight: 700; color: #111827;">Zomato App</h4>
+                        <p style="font-size: 13px; color: #64748b; margin-bottom: 16px;">Live order tracking, exclusive discounts & faster checkout.</p>
+                        <div style="background: #fee2e2; color: #e23744; font-size: 12px; font-weight: 600; padding: 6px 10px; border-radius: 6px; display: inline-block;">
+                            ⭐ 4.6 / 5 on App Store
+                        </div>
+                    </div>
+                </div>
+                <div class="app-promo-content">
+                    <h2>Get the Zomato App</h2>
+                    <p>We will send you a link, open it on your phone to download the app and unlock exclusive member offers.</p>
+                    <form class="app-input-group" id="appSmsForm">
+                        <input type="text" placeholder="Enter your mobile number" id="appPhoneInput" required>
+                        <button type="submit">Share App Link</button>
+                    </form>
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                        <a href="#get-app" class="app-store-badge" style="background: #1e293b;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.87-.9.04-1.98.6-2.62 1.35-.57.65-1.07 1.71-1.02 2.76.99.08 2.01-.49 2.63-1.24z"/></svg>
+                            <div class="badge-text">
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#get-app" class="app-store-badge" style="background: #1e293b;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186c-.352-.303-.565-.778-.565-1.352V3.166c0-.574.213-1.049.564-1.352zm11.23 11.23l2.42 2.42-12.7 7.218 10.28-9.638zm0-2.088L4.559 1.318l12.7 7.218-2.42 2.42zm1.464 1.044l4.24-2.41c.883-.502.883-1.32 0-1.822l-4.24-2.41-1.93 1.93 1.93 2.712z"/></svg>
+                            <div class="badge-text">
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Comprehensive Food Delivery Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Footer Top Bar -->
+            <div class="footer-top-bar">
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Zomato" class="footer-logo">
+                </div>
+                <div class="footer-selectors">
+                    <div class="footer-select-pill" id="footerCountryPicker">
+                        <span>🇮🇳</span>
+                        <span>India</span>
+                        <span style="font-size: 10px; margin-left: 4px;">▼</span>
+                    </div>
+                    <div class="footer-select-pill" id="footerLangPicker">
+                        <span>🌐</span>
+                        <span>English</span>
+                        <span style="font-size: 10px; margin-left: 4px;">▼</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Column Links -->
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">ABOUT ZOMATO</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Work With Us</a></li>
+                        <li><a href="investor.html">Investor Relations</a></li>
+                        <li><a href="#report-fraud">Report Fraud</a></li>
+                        <li><a href="#press">Press Kit</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">ZOMAVERSE</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Zomato</a></li>
+                        <li><a href="#blinkit">Blinkit (Quick Delivery)</a></li>
+                        <li><a href="#feeding-india">Feeding India</a></li>
+                        <li><a href="#hyperpure">Hyperpure (B2B Supplies)</a></li>
+                        <li><a href="#zomato-live">Zomato Live</a></li>
+                        <li><a href="#zomaland">Zomaland</a></li>
+                        <li><a href="#weather-union">Weather Union</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">FOR RESTAURANTS</h4>
+                    <ul class="footer-list">
+                        <li><a href="add-restaurant.html">Partner With Us</a></li>
+                        <li><a href="#restaurant-app">Apps For You</a></li>
+                        <li><a href="add-restaurant.html#steps">How to Register</a></li>
+                        <li><a href="#kitchen-hub">Cloud Kitchen Hub</a></li>
+                    </ul>
+
+                    <h4 class="footer-heading" style="margin-top: 24px;">FOR ENTERPRISES</h4>
+                    <ul class="footer-list">
+                        <li><a href="#zomato-for-work">Zomato For Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">LEARN MORE</h4>
+                    <ul class="footer-list">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-social-col">
+                    <h4 class="footer-heading">SOCIAL LINKS</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-icon">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-app-badges">
+                        <a href="#get-app" class="app-store-badge">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.87-.9.04-1.98.6-2.62 1.35-.57.65-1.07 1.71-1.02 2.76.99.08 2.01-.49 2.63-1.24z"/></svg>
+                            <div class="badge-text">
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#get-app" class="app-store-badge">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186c-.352-.303-.565-.778-.565-1.352V3.166c0-.574.213-1.049.564-1.352zm11.23 11.23l2.42 2.42-12.7 7.218 10.28-9.638zm0-2.088L4.559 1.318l12.7 7.218-2.42 2.42zm1.464 1.044l4.24-2.41c.883-.502.883-1.32 0-1.822l-4.24-2.41-1.93 1.93 1.93 2.712z"/></svg>
+                            <div class="badge-text">
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Legal Disclaimer -->
+            <div class="footer-bottom-bar">
+                <p class="footer-disclaimer">
+                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2030 &copy; Zomato™ Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
